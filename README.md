@@ -1,5 +1,5 @@
 # datorama-d3-chord-chart
-Custom widget for Datorama. Visualises relationships between dimensions.
+Custom widget for Datorama. Visualises weights of relationships between dimensions.
 
 This custom widget creates a chord chart, with lines linking entities of two dimensions, sized by a metric. Hovering over the nodes will highlight all related links, and hovering over a link will highlight that link and show a tooltip with the specific number.
 
