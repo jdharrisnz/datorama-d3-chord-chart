@@ -148,7 +148,7 @@ var chordChart = {
           .selectAll('linearGradient')
           .data(queryResult.rows)
           .join('linearGradient')
-            .attr('id', d => d[0].formattedValue + '-' + d[1].formattedValue);
+            .attr('id', d => d[0].formattedValue.replace(/\s/g, '_') + '-' + d[1].formattedValue.replace(/\s/g, '_'));
         
         var gradientLeftStops = gradients.append('stop')
           .attr('offset', '0%')
@@ -163,7 +163,7 @@ var chordChart = {
           .data(queryResult.rows)
           .join('path')
             .attr('class', 'link')
-            .style('fill', d => 'url(#' + d[0].formattedValue + '-' + d[1].formattedValue + ')')
+            .style('fill', d => 'url(#' + d[0].formattedValue.replace(/\s/g, '_') + '-' + d[1].formattedValue.replace(/\s/g, '_') + ')')
             .style('opacity', baseOpacity)
             .on('mouseenter', (event, d, i) => {
               tooltipDim1.text(d[0].formattedValue);
