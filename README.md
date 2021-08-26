@@ -32,7 +32,7 @@ body {
 The size of the total can't be changed, as that is set to fill the available space.
 
 ## Set up and Dependencies
-Add `chordChart.initialize();` to the JS section, and add the below dependencies to the second tab of the Custom Widget Editor.
+Add `chordChart.initialize();` to the JS section, and add the below links to the dependencies area (second button at the top left of the Custom Widget Editor).
 
 Script dependencies (must be loaded in this order):
 1. `https://d3js.org/d3.v6.min.js`
